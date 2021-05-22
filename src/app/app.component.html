@@ -1,20 +1,5 @@
-<!DOCTYPE html>
+<p-button type="button" class="p-mr-2" (click)="showSidebar = true" icon="pi pi-arrow-right"></p-button>
 
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ola</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-  </head>
-  <body>
-    <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
-      <h3 style="font-weight:normal">Left Sidebar</h3>
-      <p-button type="button" (click)="visibleSidebar1 = false" label="Save" styleClass="p-button-success"></p-button>
-      <p-button type="button" (click)="visibleSidebar1 = false" label="Cancel" styleClass="p-button-secondary"></p-button>
-  </p-sidebar>
-    <script src="" async defer></script>
-  </body>
-</html>
+<p-sidebar [(visible)]="showSidebar" [baseZIndex]="10000">
+  <h3>Left Sidebar</h3>
+</p-sidebar>

@@ -1,9 +1,11 @@
-import { SidebarModule } from 'primeng/sidebar';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+import { PrimengModule } from './primeng.module';
 
 import { AppComponent } from './app.component';
-import { ButtonModule } from 'primeng/button';
+
 
 
 @NgModule({
@@ -12,8 +14,8 @@ import { ButtonModule } from 'primeng/button';
   ],
   imports: [
     BrowserModule,
-    SidebarModule,
-    ButtonModule,
+    BrowserAnimationsModule,
+    PrimengModule
 
   ],
   providers: [],
